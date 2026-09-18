@@ -3,10 +3,10 @@
 
 namespace func2
 {
-	template <typename T>
-	T func_average(const T& a, const T& b)
+	template <typename T1, typename T2>
+	T2 func_average(const T1& a, const T1& b)
 	{
-		T aver_sum = (a + b) / 2;
+		T2 aver_sum = (a + b) / 2.0;
 
 		std::random_device rd;
 		std::mt19937 generator(rd()); // rd() = seed
